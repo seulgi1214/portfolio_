@@ -1,13 +1,22 @@
 <template>
-  <div>
-
-  </div>
-  <!-- <div id="nav">
-    <router-link to="/">Home</router-link> 
-    <router-link to="/about">About</router-link> 
-  </div> -->
+  <Nav/>
   <router-view/>
+  <Footer/>
+
 </template>
+
+
+<script>
+
+import Nav from './views/Nav.vue'
+import Footer from './views/Footer.vue'
+export default {
+  components :{
+    Nav,
+    Footer
+  }
+}
+</script>
 
 
 <style>
@@ -19,22 +28,11 @@ body {
 
 #app {
   font-family: 'Noto Sans KR', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   max-width: 1000px;
   color: #333333;
   margin: 0 auto;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
 
 body, html, h1, h2, h3, h4, h5, p {
   margin: 0;
@@ -46,6 +44,35 @@ ul, ol {
   margin: 0;
   padding: 0;
 } 
+
+a {
+  color: #333333;
+  text-decoration: none;
+}
+
+  .common_container {
+    background: #ffffff;
+    border-radius: 5px; 
+    padding: 30px;
+  }
+
+.common_title {
+    text-align: left; 
+    position: relative; 
+    padding-left: 15px;
+  }
+
+  .common_title::before {
+    background-color: #BD97CB;  
+    content: ""; 
+    position: absolute;
+    top: 50%;  
+    left: 0;  
+    width: 7px;  
+    height: 7px; 
+    transform: translateY(-50%);  
+    border-radius: 10px;
+  }
 
 
 </style>
