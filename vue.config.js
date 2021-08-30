@@ -1,5 +1,5 @@
 
-// module.exports = {
-//   publicPath: '/portfolio',
-//   outputDir: 'docs'
-// }
+module.exports = {
+  publicPath: '/portfolio_',
+  outputDir: 'docs'
+}
