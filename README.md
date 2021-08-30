@@ -1,24 +1,23 @@
 # portfolio
 
-## Project setup
-```
-npm install
-```
+vue.js기반의 포트폴리오
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## 미리보기
 
-### Compiles and minifies for production
-```
-npm run build
-```
+https://seulgi1214.github.io/portfolio_/
 
-### Lints and fixes files
-```
-npm run lint
-```
+## 프로젝트 사용언어
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- html
+- css
+- vue
+- js
+
+## portfolio 설명
+
+```
+vue.js기반으로 만들었으며, 자기소개와 프로젝트들 그리고 연락처페이지가 순서대로
+구성되어 있다.
+포트폴리오는 계속 업데이트할 예정이다.
+
+```
