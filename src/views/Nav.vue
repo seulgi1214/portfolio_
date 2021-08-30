@@ -9,12 +9,11 @@
       <div class="wrap com">
         <ul class="list">
           <li><router-link to="/project" @click="changeColor(1)" :class="{active: active_el == 1}">PROJECT</router-link></li>
-          <li>RESUME</li>
-          <li><router-link to="contact" @click="changeColor(3)" :class="{active: active_el == 3}">CONTACT</router-link></li>
+          <li><router-link to="/contact" @click="changeColor(3)" :class="{active: active_el == 2}">CONTACT</router-link></li>
         </ul>
         <div class="icons">
-          <i class="fab fa-github"></i>
-          <i class="fas fa-bold"></i>
+          <a href="https://github.com/seulgi1214" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://blog.naver.com/dev_dduddu" target="_blank"><i class="fas fa-bold"></i></a>
         </div>
       </div>
     </div>
@@ -92,7 +91,7 @@ export default {
   }
 
 
-.container .wrap .list li:not(last-child), .wrap .icons i:first-child {
+.container .wrap .list li:not(last-child), .wrap .icons a:first-child {
   margin-right: 25px;
   }
 
